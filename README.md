@@ -19,7 +19,7 @@ $ npm install -g ces-cli
 $ ces-cli COMMAND
 running command...
 $ ces-cli (-v|--version|version)
-ces-cli/0.0.1 linux-x64 node-v12.5.0
+ces-cli/0.1.0 linux-x64 node-v12.5.0
 $ ces-cli --help [COMMAND]
 USAGE
   $ ces-cli COMMAND
@@ -50,7 +50,7 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/sudharsan-gandhi/ces-cli/blob/v0.0.1/src/commands/hello.ts)_
+_See code: [src/commands/hello.ts](https://github.com/sudharsan-gandhi/ces-cli/blob/v0.1.0/src/commands/hello.ts)_
 
 ## `ces-cli help [COMMAND]`
 
@@ -81,5 +81,5 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/init.ts](https://github.com/sudharsan-gandhi/ces-cli/blob/v0.0.1/src/commands/init.ts)_
+_See code: [src/commands/init.ts](https://github.com/sudharsan-gandhi/ces-cli/blob/v0.1.0/src/commands/init.ts)_
 <!-- commandsstop -->
