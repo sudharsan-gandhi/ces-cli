@@ -19,7 +19,7 @@ $ npm install -g ces-cli
 $ ces-cli COMMAND
 running command...
 $ ces-cli (-v|--version|version)
-ces-cli/0.2.0 linux-x64 node-v12.5.0
+ces-cli/0.3.0 linux-x64 node-v12.5.0
 $ ces-cli --help [COMMAND]
 USAGE
   $ ces-cli COMMAND
@@ -28,29 +28,8 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`ces-cli hello [FILE]`](#ces-cli-hello-file)
 * [`ces-cli help [COMMAND]`](#ces-cli-help-command)
 * [`ces-cli init [PROJECT-NAME]`](#ces-cli-init-project-name)
-
-## `ces-cli hello [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ ces-cli hello [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ ces-cli hello
-  hello world from ./src/hello.ts!
-```
-
-_See code: [src/commands/hello.ts](https://github.com/sudharsan-gandhi/ces-cli/blob/v0.2.0/src/commands/hello.ts)_
 
 ## `ces-cli help [COMMAND]`
 
@@ -81,5 +60,5 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/init.ts](https://github.com/sudharsan-gandhi/ces-cli/blob/v0.2.0/src/commands/init.ts)_
+_See code: [src/commands/init.ts](https://github.com/sudharsan-gandhi/ces-cli/blob/v0.3.0/src/commands/init.ts)_
 <!-- commandsstop -->

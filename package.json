@@ -1,7 +1,7 @@
 {
   "name": "ces-cli",
   "description": "CES internal node kick starter and related cli commands",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "sudharsan gandhi @sudharsan-gandhi",
   "bin": {
     "ces-cli": "./bin/run"
