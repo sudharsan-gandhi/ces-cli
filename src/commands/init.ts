@@ -1,6 +1,6 @@
 import {Command, flags} from '@oclif/command'
 import * as inquirer from 'inquirer'
-import { createWriteStream } from 'fs';
+import { createWriteStream, rename, unlink } from 'fs';
 import * as request from 'superagent';
 import * as admzip from 'adm-zip'
 
@@ -46,8 +46,13 @@ export default class Init extends Command {
         .on('finish', function() {
           console.log('finished dowloading...');
           console.log('extracting files...');
-          let zip = new admzip(source);
-          zip.extractEntryTo(`node-onion-boiler-master/`, `./${projectName}`, false, true);
+          let zip = new admzip('master.zip');
+          zip.extractAllTo(`./`, true);
+          unlink('master.zip', (err) => { console.error(err)});
+          rename('node-onion-boiler-master', projectName, () => {
+            console.log('renamed project')
+          })
+          // zip.extractEntryTo(`node-onion-boiler-master/`, `./${projectName}/`, false, true);
         })
         break
       }
